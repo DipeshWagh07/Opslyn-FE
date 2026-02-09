@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const BASE_URL = "http://localhost:5001";
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
 
 interface DashboardData {
   totalAssets: number;
